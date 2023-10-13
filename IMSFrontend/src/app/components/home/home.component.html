@@ -1,0 +1,157 @@
+<div class="container">
+
+    <h1 class="text-center m-4">Inventory Management System</h1>
+
+
+
+    <div class="create-product-form mt-4">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addProdModal">
+            Add New Product
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="addProdModal" tabindex="-1" aria-labelledby="addProdModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="addProdModalLabel">Add New Product</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Form to create or edit a product -->
+                        <form [formGroup]="productForm">
+
+                            <label for="name">Product Name:</label>
+                            <input class="form-control" type="text" id="name" formControlName="name" />
+
+                            <label for="name">Description:</label>
+                            <input class="form-control" type="text" id="name" formControlName="description" />
+
+                            <label for="name">Quantity:</label>
+                            <input class="form-control" type="text" id="name" formControlName="quantity" />
+
+                            <label for="name">Purchase Price:</label>
+                            <input class="form-control" type="text" id="name" formControlName="purchasePrice" />
+
+                            <label for="name">Sale Price:</label>
+                            <input class="form-control" type="text" id="name" formControlName="salePrice" />
+
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal"
+                            (click)="saveProduct()">Add Product</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="display-products m-4">
+        <!-- Display products -->
+        <!-- product.component.html -->
+        <div *ngIf="products">
+            <table class="table">
+                <!-- Table headers -->
+                <thead class="table-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>Product Name</th>
+                        <th>Description</th>
+                        <th>Sales Price</th>
+                        <th>Quantity</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <!-- Table body -->
+                <tbody>
+                    <tr *ngFor="let product of products">
+                        <td>{{ product.productID }}</td>
+                        <td>{{ product.name }}</td>
+                        <td>{{ product.description }}</td>
+                        <td>{{ product.quantity }}</td>
+                        <td>{{ product.salePrice | currency:'USD':'symbol' }}</td>
+                        <td>
+                            <a data-bs-toggle="modal" data-bs-target="#updateModal"
+                                (click)="editProduct(product)">Edit</a>
+                            <a class="m-2 p-2" (click)="deleteProduct(product)">Delete</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Pagination controls -->
+            <ul class="pagination">
+                <li class="page-item" [class.disabled]="currentPage === 1">
+                    <a class="page-link" (click)="onPageChange(currentPage - 1)" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li class="page-item" *ngFor="let page of getPaginationArray(totalPages)"
+                    [class.active]="page === currentPage">
+                    <a class="page-link" (click)="onPageChange(page)">{{ page }}</a>
+                </li>
+                <li class="page-item" [class.disabled]="currentPage === totalPages">
+                    <a class="page-link" (click)="onPageChange(currentPage + 1)" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+                <li class="page-item">
+                    <select class="form-control" [(ngModel)]="pageSize" (change)="changePageSize($event)">
+                        <option *ngFor="let option of pageSizeOptions" [value]="option">{{ option }}</option>
+                    </select>
+
+                </li>
+            </ul>
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="updateModal" tabindex="-1" aria-labelledby="updateModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="updateModalLabel">Update Product</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div *ngIf="editingProduct">
+                <form>
+                    <div class="form-group">
+                        <label for="productName">Product Name</label>
+                        <input [(ngModel)]="editingProduct.name" name="productName" id="productName"
+                            class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <input [(ngModel)]="editingProduct.description" name="description" id="description"
+                            class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="price">Price</label>
+                        <input [(ngModel)]="editingProduct.salePrice" name="price" id="price" class="form-control"
+                            required>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal" (click)="saveEditedProduct()">Update
+                Product</button>
+        </div>
+
+    </div>
+</div>
+</div>

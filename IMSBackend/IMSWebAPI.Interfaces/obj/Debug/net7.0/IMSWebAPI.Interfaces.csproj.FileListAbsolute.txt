@@ -1,0 +1,15 @@
+D:\HK Dev\InventoryManagementSystem\InventoryManagementSystem\IMSBackend\IMSWebAPI.Interfaces\bin\Debug\net7.0\IMSWebAPI.Interfaces.deps.json
+D:\HK Dev\InventoryManagementSystem\InventoryManagementSystem\IMSBackend\IMSWebAPI.Interfaces\bin\Debug\net7.0\IMSWebAPI.Interfaces.dll
+D:\HK Dev\InventoryManagementSystem\InventoryManagementSystem\IMSBackend\IMSWebAPI.Interfaces\bin\Debug\net7.0\IMSWebAPI.Interfaces.pdb
+D:\HK Dev\InventoryManagementSystem\InventoryManagementSystem\IMSBackend\IMSWebAPI.Interfaces\bin\Debug\net7.0\IMSWebAPI.Models.dll
+D:\HK Dev\InventoryManagementSystem\InventoryManagementSystem\IMSBackend\IMSWebAPI.Interfaces\bin\Debug\net7.0\IMSWebAPI.Models.pdb
+D:\HK Dev\InventoryManagementSystem\InventoryManagementSystem\IMSBackend\IMSWebAPI.Interfaces\obj\Debug\net7.0\IMSWebAPI.Interfaces.csproj.AssemblyReference.cache
+D:\HK Dev\InventoryManagementSystem\InventoryManagementSystem\IMSBackend\IMSWebAPI.Interfaces\obj\Debug\net7.0\IMSWebAPI.Interfaces.GeneratedMSBuildEditorConfig.editorconfig
+D:\HK Dev\InventoryManagementSystem\InventoryManagementSystem\IMSBackend\IMSWebAPI.Interfaces\obj\Debug\net7.0\IMSWebAPI.Interfaces.AssemblyInfoInputs.cache
+D:\HK Dev\InventoryManagementSystem\InventoryManagementSystem\IMSBackend\IMSWebAPI.Interfaces\obj\Debug\net7.0\IMSWebAPI.Interfaces.AssemblyInfo.cs
+D:\HK Dev\InventoryManagementSystem\InventoryManagementSystem\IMSBackend\IMSWebAPI.Interfaces\obj\Debug\net7.0\IMSWebAPI.Interfaces.csproj.CoreCompileInputs.cache
+D:\HK Dev\InventoryManagementSystem\InventoryManagementSystem\IMSBackend\IMSWebAPI.Interfaces\obj\Debug\net7.0\IMSWebAPI.Interfaces.csproj.CopyComplete
+D:\HK Dev\InventoryManagementSystem\InventoryManagementSystem\IMSBackend\IMSWebAPI.Interfaces\obj\Debug\net7.0\IMSWebAPI.Interfaces.dll
+D:\HK Dev\InventoryManagementSystem\InventoryManagementSystem\IMSBackend\IMSWebAPI.Interfaces\obj\Debug\net7.0\refint\IMSWebAPI.Interfaces.dll
+D:\HK Dev\InventoryManagementSystem\InventoryManagementSystem\IMSBackend\IMSWebAPI.Interfaces\obj\Debug\net7.0\IMSWebAPI.Interfaces.pdb
+D:\HK Dev\InventoryManagementSystem\InventoryManagementSystem\IMSBackend\IMSWebAPI.Interfaces\obj\Debug\net7.0\ref\IMSWebAPI.Interfaces.dll

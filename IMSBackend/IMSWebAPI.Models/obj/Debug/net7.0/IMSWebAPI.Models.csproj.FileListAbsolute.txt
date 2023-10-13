@@ -1,0 +1,12 @@
+D:\HK Dev\InventoryManagementSystem\InventoryManagementSystem\IMSBackend\IMSWebAPI.Models\obj\Debug\net7.0\IMSWebAPI.Models.csproj.AssemblyReference.cache
+D:\HK Dev\InventoryManagementSystem\InventoryManagementSystem\IMSBackend\IMSWebAPI.Models\obj\Debug\net7.0\IMSWebAPI.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\HK Dev\InventoryManagementSystem\InventoryManagementSystem\IMSBackend\IMSWebAPI.Models\obj\Debug\net7.0\IMSWebAPI.Models.AssemblyInfoInputs.cache
+D:\HK Dev\InventoryManagementSystem\InventoryManagementSystem\IMSBackend\IMSWebAPI.Models\obj\Debug\net7.0\IMSWebAPI.Models.AssemblyInfo.cs
+D:\HK Dev\InventoryManagementSystem\InventoryManagementSystem\IMSBackend\IMSWebAPI.Models\obj\Debug\net7.0\IMSWebAPI.Models.csproj.CoreCompileInputs.cache
+D:\HK Dev\InventoryManagementSystem\InventoryManagementSystem\IMSBackend\IMSWebAPI.Models\bin\Debug\net7.0\IMSWebAPI.Models.deps.json
+D:\HK Dev\InventoryManagementSystem\InventoryManagementSystem\IMSBackend\IMSWebAPI.Models\bin\Debug\net7.0\IMSWebAPI.Models.dll
+D:\HK Dev\InventoryManagementSystem\InventoryManagementSystem\IMSBackend\IMSWebAPI.Models\bin\Debug\net7.0\IMSWebAPI.Models.pdb
+D:\HK Dev\InventoryManagementSystem\InventoryManagementSystem\IMSBackend\IMSWebAPI.Models\obj\Debug\net7.0\IMSWebAPI.Models.dll
+D:\HK Dev\InventoryManagementSystem\InventoryManagementSystem\IMSBackend\IMSWebAPI.Models\obj\Debug\net7.0\refint\IMSWebAPI.Models.dll
+D:\HK Dev\InventoryManagementSystem\InventoryManagementSystem\IMSBackend\IMSWebAPI.Models\obj\Debug\net7.0\IMSWebAPI.Models.pdb
+D:\HK Dev\InventoryManagementSystem\InventoryManagementSystem\IMSBackend\IMSWebAPI.Models\obj\Debug\net7.0\ref\IMSWebAPI.Models.dll
